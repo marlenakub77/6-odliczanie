@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+
+#contents {
+  width: 80vh;
+  height: 30vh;
+  background-color: #000;
+  font-size: 120px;
+  color: #fff;
+  font-family: 'Trebuchet MS', sans-serif;
+  position: relative;
+}
+
+.animation {
+  visibility: hidden;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+#slogan {
+  font-size: 60px;
+  animation-name: visibility;
+  animation-delay: 10s;
+  animation-iteration-count: infinite;
+}
+
+#one, #two, #three, #four, #five, #six, #seven, #eight, #nine, #ten {
+  animation-name: hiding;
+}
+
+@keyframes hiding {
+  0% {
+    visibility: visible;
+  }
+  100% {
+    visibility: hidden;
+  }
+}
+
+@keyframes visibility {
+  0%, 100% {
+    visibility: visible;
+  }
+}
+
+#nine {
+  animation-delay: 1s;
+}
+
+#eight {
+  animation-delay: 2s;
+}
+
+#seven {
+  animation-delay: 3s;
+}
+
+#six {
+  animation-delay: 4s;  
+}
+
+#five {
+  animation-delay: 5s;
+}
+
+#four {
+  animation-delay: 6s;
+}
+
+#three {
+  animation-delay: 7s;
+}
+
+#two {
+  animation-delay: 8s;
+}
+
+#one {
+  animation-delay: 9s;
+}
